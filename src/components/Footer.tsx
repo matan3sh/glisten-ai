@@ -1,6 +1,6 @@
 import WordMark from "@/components/WordMark";
 
-export default function Header() {
+export default function Footer() {
   return (
     <div>
       <WordMark />
