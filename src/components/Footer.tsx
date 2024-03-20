@@ -13,11 +13,16 @@ export default async function Footer() {
         <WordMark />
         <span className="sr-only">Glisten.ai Home Page</span>
       </Link>
-      <nav>
-        <ul>
+      <nav aria-label="footer">
+        <ul className="flex gap-6">
           {settings.data.navigation.map((item) => (
             <li key={item.label}>
-              <PrismicNextLink field={item.link}>{item.label}</PrismicNextLink>
+              <PrismicNextLink
+                field={item.link}
+                className="inline-flex min-h-11 items-center"
+              >
+                {item.label}
+              </PrismicNextLink>
             </li>
           ))}
         </ul>
